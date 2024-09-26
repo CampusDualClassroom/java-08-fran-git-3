@@ -3,7 +3,8 @@ package com.campusdual.classroom;
 public class Exercise08 {
 
     public static void main(String[] args) {
-
+        int Y = 5;
+        whileLoop(Y);
     }
 
     //TODO ↓
@@ -13,5 +14,12 @@ public class Exercise08 {
     // etc.
     public static void whileLoop(int num) {
 
+        int X = 0;
+
+        while (X < num) {
+            // Mostrar mensaje con el valor actual de X y el valor que tendrá en la siguiente iteración
+            System.out.println(X+" < "+num+". El proximo ciclo valdra: "+(X+1));
+            X++; // Aumentar X en una unidad
+        }
     }
 }
